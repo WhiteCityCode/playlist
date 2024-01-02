@@ -6831,45 +6831,42 @@ var $elm$core$Array$indexedMap = F2(
 			true,
 			A3($elm$core$Elm$JsArray$foldl, helper, initialBuilder, tree));
 	});
-var $tricycle$elm_embed_youtube$Embed$Youtube$Internal$Youtube$Youtube = F2(
+var $bellroy$elm_embed_youtube$Embed$Youtube$Internal$Youtube$Youtube = F2(
 	function (a, b) {
 		return {$: 'Youtube', a: a, b: b};
 	});
-var $tricycle$elm_embed_youtube$Embed$Youtube$Internal$Youtube$attributes = F2(
+var $bellroy$elm_embed_youtube$Embed$Youtube$Internal$Youtube$attributes = F2(
 	function (a, _v0) {
 		var youtubeVideoid = _v0.a;
 		var listOfAttributes = _v0.b;
 		return A2(
-			$tricycle$elm_embed_youtube$Embed$Youtube$Internal$Youtube$Youtube,
+			$bellroy$elm_embed_youtube$Embed$Youtube$Internal$Youtube$Youtube,
 			youtubeVideoid,
 			_Utils_ap(listOfAttributes, a));
 	});
-var $tricycle$elm_embed_youtube$Embed$Youtube$attributes = F2(
-	function (a, yt) {
-		return A2($tricycle$elm_embed_youtube$Embed$Youtube$Internal$Youtube$attributes, a, yt);
-	});
-var $tricycle$elm_embed_youtube$Embed$Youtube$Internal$Attribute$Autoplay = {$: 'Autoplay'};
-var $tricycle$elm_embed_youtube$Embed$Youtube$Attributes$autoplay = $tricycle$elm_embed_youtube$Embed$Youtube$Internal$Attribute$Autoplay;
-var $tricycle$elm_embed_youtube$Embed$Youtube$Internal$Youtube$YoutubeVideoId = function (a) {
+var $bellroy$elm_embed_youtube$Embed$Youtube$attributes = $bellroy$elm_embed_youtube$Embed$Youtube$Internal$Youtube$attributes;
+var $bellroy$elm_embed_youtube$Embed$Youtube$Internal$Attribute$Autoplay = {$: 'Autoplay'};
+var $bellroy$elm_embed_youtube$Embed$Youtube$Attributes$autoplay = $bellroy$elm_embed_youtube$Embed$Youtube$Internal$Attribute$Autoplay;
+var $bellroy$elm_embed_youtube$Embed$Youtube$Internal$Youtube$YoutubeVideoId = function (a) {
 	return {$: 'YoutubeVideoId', a: a};
 };
-var $tricycle$elm_embed_youtube$Embed$Youtube$Internal$Youtube$fromString = function (stringYoutubeVideoid) {
+var $bellroy$elm_embed_youtube$Embed$Youtube$Internal$Youtube$fromString = function (stringYoutubeVideoid) {
 	return A2(
-		$tricycle$elm_embed_youtube$Embed$Youtube$Internal$Youtube$Youtube,
-		$tricycle$elm_embed_youtube$Embed$Youtube$Internal$Youtube$YoutubeVideoId(stringYoutubeVideoid),
+		$bellroy$elm_embed_youtube$Embed$Youtube$Internal$Youtube$Youtube,
+		$bellroy$elm_embed_youtube$Embed$Youtube$Internal$Youtube$YoutubeVideoId(stringYoutubeVideoid),
 		_List_Nil);
 };
-var $tricycle$elm_embed_youtube$Embed$Youtube$fromString = $tricycle$elm_embed_youtube$Embed$Youtube$Internal$Youtube$fromString;
-var $tricycle$elm_embed_youtube$Embed$Youtube$Internal$Attribute$Height = function (a) {
+var $bellroy$elm_embed_youtube$Embed$Youtube$fromString = $bellroy$elm_embed_youtube$Embed$Youtube$Internal$Youtube$fromString;
+var $bellroy$elm_embed_youtube$Embed$Youtube$Internal$Attribute$Height = function (a) {
 	return {$: 'Height', a: a};
 };
-var $tricycle$elm_embed_youtube$Embed$Youtube$Attributes$height = $tricycle$elm_embed_youtube$Embed$Youtube$Internal$Attribute$Height;
-var $tricycle$elm_embed_youtube$Embed$Youtube$Internal$Attribute$Language = function (a) {
+var $bellroy$elm_embed_youtube$Embed$Youtube$Attributes$height = $bellroy$elm_embed_youtube$Embed$Youtube$Internal$Attribute$Height;
+var $bellroy$elm_embed_youtube$Embed$Youtube$Internal$Attribute$Language = function (a) {
 	return {$: 'Language', a: a};
 };
-var $tricycle$elm_embed_youtube$Embed$Youtube$Attributes$language = $tricycle$elm_embed_youtube$Embed$Youtube$Internal$Attribute$Language;
-var $tricycle$elm_embed_youtube$Embed$Youtube$Internal$Attribute$ModestBranding = {$: 'ModestBranding'};
-var $tricycle$elm_embed_youtube$Embed$Youtube$Attributes$modestBranding = $tricycle$elm_embed_youtube$Embed$Youtube$Internal$Attribute$ModestBranding;
+var $bellroy$elm_embed_youtube$Embed$Youtube$Attributes$language = $bellroy$elm_embed_youtube$Embed$Youtube$Internal$Attribute$Language;
+var $bellroy$elm_embed_youtube$Embed$Youtube$Internal$Attribute$ModestBranding = {$: 'ModestBranding'};
+var $bellroy$elm_embed_youtube$Embed$Youtube$Attributes$modestBranding = $bellroy$elm_embed_youtube$Embed$Youtube$Internal$Attribute$ModestBranding;
 var $elm$virtual_dom$VirtualDom$attribute = F2(
 	function (key, value) {
 		return A2(
@@ -6897,7 +6894,7 @@ var $elm$html$Html$Attributes$width = function (n) {
 		'width',
 		$elm$core$String$fromInt(n));
 };
-var $tricycle$elm_embed_youtube$Embed$Youtube$Internal$View$toHtmlAttribute = function (attribute) {
+var $bellroy$elm_embed_youtube$Embed$Youtube$Internal$View$toHtmlAttribute = function (attribute) {
 	switch (attribute.$) {
 		case 'Width':
 			var a = attribute.a;
@@ -6907,13 +6904,16 @@ var $tricycle$elm_embed_youtube$Embed$Youtube$Internal$View$toHtmlAttribute = fu
 			var a = attribute.a;
 			return $elm$core$Maybe$Just(
 				$elm$html$Html$Attributes$height(a));
+		case 'LazyLoad':
+			return $elm$core$Maybe$Just(
+				A2($elm$html$Html$Attributes$attribute, 'loading', 'lazy'));
 		default:
 			return $elm$core$Maybe$Nothing;
 	}
 };
-var $tricycle$elm_embed_youtube$Embed$Youtube$Internal$View$toHtmlAttributes = function (_v0) {
+var $bellroy$elm_embed_youtube$Embed$Youtube$Internal$View$toHtmlAttributes = function (_v0) {
 	var attributes = _v0.b;
-	return A2($elm$core$List$filterMap, $tricycle$elm_embed_youtube$Embed$Youtube$Internal$View$toHtmlAttribute, attributes);
+	return A2($elm$core$List$filterMap, $bellroy$elm_embed_youtube$Embed$Youtube$Internal$View$toHtmlAttribute, attributes);
 };
 var $elm$url$Url$addPort = F2(
 	function (maybePort, starter) {
@@ -6993,13 +6993,15 @@ var $elm$url$Url$Builder$int = F2(
 			$elm$url$Url$percentEncode(key),
 			$elm$core$String$fromInt(value));
 	});
-var $tricycle$elm_embed_youtube$Embed$Youtube$Internal$View$toQueryParameters_ = F2(
+var $bellroy$elm_embed_youtube$Embed$Youtube$Internal$View$toQueryParameters_ = F2(
 	function (_v0, attribute) {
 		var stringYoutubeVideoId = _v0.a;
 		switch (attribute.$) {
 			case 'Width':
 				return _List_Nil;
 			case 'Height':
+				return _List_Nil;
+			case 'LazyLoad':
 				return _List_Nil;
 			case 'Autoplay':
 				return _List_fromArray(
@@ -7049,7 +7051,8 @@ var $tricycle$elm_embed_youtube$Embed$Youtube$Internal$View$toQueryParameters_ =
 			case 'PlaysInline':
 				return _List_fromArray(
 					[
-						A2($elm$url$Url$Builder$string, 'playsinline', '1')
+						A2($elm$url$Url$Builder$string, 'playsinline', '1'),
+						A2($elm$url$Url$Builder$string, 'webkit-playsinline', '1')
 					]);
 			case 'HideControls':
 				return _List_fromArray(
@@ -7090,7 +7093,7 @@ var $tricycle$elm_embed_youtube$Embed$Youtube$Internal$View$toQueryParameters_ =
 					]);
 		}
 	});
-var $tricycle$elm_embed_youtube$Embed$Youtube$Internal$View$toQueryParameters = function (_v0) {
+var $bellroy$elm_embed_youtube$Embed$Youtube$Internal$View$toQueryParameters = function (_v0) {
 	var youtubeVideoId = _v0.a;
 	var attributes = _v0.b;
 	return _Utils_ap(
@@ -7098,31 +7101,35 @@ var $tricycle$elm_embed_youtube$Embed$Youtube$Internal$View$toQueryParameters = 
 			$elm$core$List$foldl,
 			function (a) {
 				return $elm$core$Basics$append(
-					A2($tricycle$elm_embed_youtube$Embed$Youtube$Internal$View$toQueryParameters_, youtubeVideoId, a));
+					A2($bellroy$elm_embed_youtube$Embed$Youtube$Internal$View$toQueryParameters_, youtubeVideoId, a));
 			},
 			_List_Nil,
 			attributes),
 		_List_fromArray(
 			[
 				A2($elm$url$Url$Builder$string, 'version', '3'),
-				A2($elm$url$Url$Builder$string, 'rel', '0')
+				A2($elm$url$Url$Builder$string, 'rel', '0'),
+				A2($elm$url$Url$Builder$string, 'enablejsapi', '1')
 			]));
 };
-var $tricycle$elm_embed_youtube$Embed$Youtube$Internal$View$toYoutubeUrl = function (yt) {
+var $bellroy$elm_embed_youtube$Embed$Youtube$Internal$View$toYoutubeUrl = function (yt) {
 	var stringYoutubeVideoid = yt.a.a;
 	return {
 		fragment: $elm$core$Maybe$Nothing,
-		host: 'www.youtube.com',
+		host: 'www.youtube-nocookie.com',
 		path: '/embed/' + stringYoutubeVideoid,
 		port_: $elm$core$Maybe$Nothing,
 		protocol: $elm$url$Url$Https,
 		query: $elm$core$Maybe$Just(
-			$elm$url$Url$Builder$toQuery(
-				$tricycle$elm_embed_youtube$Embed$Youtube$Internal$View$toQueryParameters(yt)))
+			A2(
+				$elm$core$String$dropLeft,
+				1,
+				$elm$url$Url$Builder$toQuery(
+					$bellroy$elm_embed_youtube$Embed$Youtube$Internal$View$toQueryParameters(yt))))
 	};
 };
 var $elm$html$Html$Attributes$type_ = $elm$html$Html$Attributes$stringProperty('type');
-var $tricycle$elm_embed_youtube$Embed$Youtube$Internal$View$toIframe = function (yt) {
+var $bellroy$elm_embed_youtube$Embed$Youtube$Internal$View$toIframe = function (yt) {
 	return A2(
 		$elm$html$Html$iframe,
 		_Utils_ap(
@@ -7130,39 +7137,39 @@ var $tricycle$elm_embed_youtube$Embed$Youtube$Internal$View$toIframe = function 
 				[
 					$elm$html$Html$Attributes$src(
 					$elm$url$Url$toString(
-						$tricycle$elm_embed_youtube$Embed$Youtube$Internal$View$toYoutubeUrl(yt))),
+						$bellroy$elm_embed_youtube$Embed$Youtube$Internal$View$toYoutubeUrl(yt))),
 					$elm$html$Html$Attributes$type_('text/html'),
 					A2($elm$html$Html$Attributes$attribute, 'allowfullscreen', 'true'),
 					A2($elm$html$Html$Attributes$attribute, 'allow', 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen'),
 					A2($elm$html$Html$Attributes$attribute, 'frameborder', '0')
 				]),
-			$tricycle$elm_embed_youtube$Embed$Youtube$Internal$View$toHtmlAttributes(yt)),
+			$bellroy$elm_embed_youtube$Embed$Youtube$Internal$View$toHtmlAttributes(yt)),
 		_List_Nil);
 };
-var $tricycle$elm_embed_youtube$Embed$Youtube$toHtml = $tricycle$elm_embed_youtube$Embed$Youtube$Internal$View$toIframe;
-var $tricycle$elm_embed_youtube$Embed$Youtube$Internal$Attribute$Width = function (a) {
+var $bellroy$elm_embed_youtube$Embed$Youtube$toHtml = $bellroy$elm_embed_youtube$Embed$Youtube$Internal$View$toIframe;
+var $bellroy$elm_embed_youtube$Embed$Youtube$Internal$Attribute$Width = function (a) {
 	return {$: 'Width', a: a};
 };
-var $tricycle$elm_embed_youtube$Embed$Youtube$Attributes$width = $tricycle$elm_embed_youtube$Embed$Youtube$Internal$Attribute$Width;
+var $bellroy$elm_embed_youtube$Embed$Youtube$Attributes$width = $bellroy$elm_embed_youtube$Embed$Youtube$Internal$Attribute$Width;
 var $author$project$Main$player = function (v) {
-	return $tricycle$elm_embed_youtube$Embed$Youtube$toHtml(
+	return $bellroy$elm_embed_youtube$Embed$Youtube$toHtml(
 		A2(
-			$tricycle$elm_embed_youtube$Embed$Youtube$attributes,
+			$bellroy$elm_embed_youtube$Embed$Youtube$attributes,
 			_List_fromArray(
 				[
-					$tricycle$elm_embed_youtube$Embed$Youtube$Attributes$width(640),
-					$tricycle$elm_embed_youtube$Embed$Youtube$Attributes$height(400),
-					$tricycle$elm_embed_youtube$Embed$Youtube$Attributes$autoplay,
-					$tricycle$elm_embed_youtube$Embed$Youtube$Attributes$modestBranding,
-					$tricycle$elm_embed_youtube$Embed$Youtube$Attributes$language('ro')
+					$bellroy$elm_embed_youtube$Embed$Youtube$Attributes$width(640),
+					$bellroy$elm_embed_youtube$Embed$Youtube$Attributes$height(400),
+					$bellroy$elm_embed_youtube$Embed$Youtube$Attributes$autoplay,
+					$bellroy$elm_embed_youtube$Embed$Youtube$Attributes$modestBranding,
+					$bellroy$elm_embed_youtube$Embed$Youtube$Attributes$language('ro')
 				]),
-			$tricycle$elm_embed_youtube$Embed$Youtube$fromString(v.id)));
+			$bellroy$elm_embed_youtube$Embed$Youtube$fromString(v.id)));
 };
 var $elm$virtual_dom$VirtualDom$style = _VirtualDom_style;
 var $elm$html$Html$Attributes$style = $elm$virtual_dom$VirtualDom$style;
 var $elm$virtual_dom$VirtualDom$text = _VirtualDom_text;
 var $elm$html$Html$text = $elm$virtual_dom$VirtualDom$text;
-var $tricycle$elm_embed_youtube$Embed$Youtube$Thumbnail$First = {$: 'First'};
+var $bellroy$elm_embed_youtube$Embed$Youtube$Thumbnail$First = {$: 'First'};
 var $surprisetalk$elm_bulma$Bulma$Elements$FourByThree = {$: 'FourByThree'};
 var $surprisetalk$elm_bulma$Bulma$Elements$H5 = {$: 'H5'};
 var $author$project$Main$PlayNew = function (a) {
@@ -7350,7 +7357,7 @@ var $surprisetalk$elm_bulma$Bulma$Elements$title = function (size) {
 			}()
 			]));
 };
-var $tricycle$elm_embed_youtube$Embed$Youtube$Thumbnail$thumbnailVariantToImageName = function (thumbnailVariant) {
+var $bellroy$elm_embed_youtube$Embed$Youtube$Thumbnail$thumbnailVariantToImageName = function (thumbnailVariant) {
 	switch (thumbnailVariant.$) {
 		case 'PlayerBackground':
 			return '0.jpg';
@@ -7372,13 +7379,13 @@ var $tricycle$elm_embed_youtube$Embed$Youtube$Thumbnail$thumbnailVariantToImageN
 			return 'maxresdefault.jpg';
 	}
 };
-var $tricycle$elm_embed_youtube$Embed$Youtube$Thumbnail$toUrl = F2(
+var $bellroy$elm_embed_youtube$Embed$Youtube$Thumbnail$toUrl = F2(
 	function (variant, _v0) {
 		var stringYoutubeVideoid = _v0.a.a;
 		return {
 			fragment: $elm$core$Maybe$Nothing,
 			host: 'img.youtube.com',
-			path: '/vi/' + (stringYoutubeVideoid + ('/' + $tricycle$elm_embed_youtube$Embed$Youtube$Thumbnail$thumbnailVariantToImageName(variant))),
+			path: '/vi/' + (stringYoutubeVideoid + ('/' + $bellroy$elm_embed_youtube$Embed$Youtube$Thumbnail$thumbnailVariantToImageName(variant))),
 			port_: $elm$core$Maybe$Nothing,
 			protocol: $elm$url$Url$Https,
 			query: $elm$core$Maybe$Nothing
@@ -7415,9 +7422,9 @@ var $author$project$Main$video = F3(
 										]),
 									$elm$url$Url$toString(
 										A2(
-											$tricycle$elm_embed_youtube$Embed$Youtube$Thumbnail$toUrl,
-											$tricycle$elm_embed_youtube$Embed$Youtube$Thumbnail$First,
-											$tricycle$elm_embed_youtube$Embed$Youtube$fromString(v.id))))
+											$bellroy$elm_embed_youtube$Embed$Youtube$Thumbnail$toUrl,
+											$bellroy$elm_embed_youtube$Embed$Youtube$Thumbnail$First,
+											$bellroy$elm_embed_youtube$Embed$Youtube$fromString(v.id))))
 								])),
 							A2(
 							$surprisetalk$elm_bulma$Bulma$Layout$mediaContent,

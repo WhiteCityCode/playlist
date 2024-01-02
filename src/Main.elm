@@ -20,6 +20,8 @@ import Html.Events exposing (onClick)
 import Http
 import Json.Decode as D exposing (Decoder, array, field, map2, string)
 import Url
+import Html.Attributes exposing (width)
+import Html.Attributes exposing (height)
 
 
 type alias Model =
@@ -135,7 +137,7 @@ view model =
 
 videoNavbar : Html Msg
 videoNavbar =
-    navbar { color = Dark, transparent = False }
+    navbar { color = White, transparent = False }
         []
         [ navbarBrand []
             (navbarBurger False
@@ -146,11 +148,15 @@ videoNavbar =
                 ]
             )
             [ navbarItem False
-                []
-                [ img [ src "https://whitecitycode.com/images/logo/whitecity-logo.png" ] [] ]
+                [ height 128 ]
+                [ img [
+                    src "https://www.whitecitycode.com/logo-lateral.svg"
+                    , style "max-height" "3rem"
+                    , style "height" "3rem"
+                    ] [] ]
             , navbarItem False
                 []
-                [ title H3 [ style "color" "white" ] [ text "Christmas Tunes" ] ]
+                [ title H3 [ style "color" "#777" ] [ text "Christmas Tunes" ] ]
             ]
         , navbarMenu False [] []
         , navbarEnd [] []
